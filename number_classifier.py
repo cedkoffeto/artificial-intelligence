@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 import numpy
 
 #defining images classes
-classes_names=["zero","un","deux","trois","quatres","cinq","six","sept","huit","neuf"]
+classes_names=["zero","un","deux","trois","quatre","cinq","six","sept","huit","neuf"]
 
 #tensorflow version 2
 print(tf.__version__)
@@ -50,7 +50,7 @@ plt.show()
 img=preprocess(img)
 
 #predict classe
-print(classes_names[ np.argmax(model.predict(img)[0])])
+print("this image predicted category is : ",classes_names[ np.argmax(model.predict(img)[0])])
 
 
 
